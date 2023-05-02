@@ -1,0 +1,45 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.styled-table{
+    border-collapse: collapse;   
+    margin: auto;
+    border: 2px solid #cccaca;
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #fff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td{
+    padding: 12px 15px;
+}
+
+
+.styled-table tbody tr td del-but,
+.styled-table tbody tr td edit-but{
+    padding: 10px 15px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.styled-table tbody tr td del-but:hover,
+.styled-table tbody tr td edit-but:hover{
+    background-color: #000;
+    color: gold;
+}
+
+.styled-table tbody tr td del-but{
+    background-color: #fe3b00;
+}
+
+.styled-table tbody tr td edit-but{
+    background-color: #009879;
+}
