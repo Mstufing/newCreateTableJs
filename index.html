@@ -4,12 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>tableJs</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    
+    <!-- ? Form -->
+    <form class="addForm">
+        <div class="lab-inp">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="lab-inp">
+            <label for="avatar">Avatar</label>
+            <input type="url" id="avatar" name="avatar" >
+        </div>
+        <div class="lab-inp">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" required>
+        </div>
+        <div class="lab-inp">
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" required>
+        </div>
+        <div class="lab-inp">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+        <div class="lab-inp">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+       
+        <button type="submit" class="addBtn">Submit</button>
+    </form>
+
+    <!-- ? TABLE -->
     <table class="styled-table">
+        <!-- ? HEADER -->
         <thead>
             <tr>
                 <th>Id</th>
@@ -23,13 +54,50 @@
                 <th>Edit</th>
             </tr>
         </thead>
-        <tbody>
-           
-        </tbody>
+        <!-- ? BODY -->
+        <tbody class="tbody"></tbody>
 
     </table>
 
+<!-- ? MODAL -->
+<!-- Trigger/Open The Modal -->
+<!-- <button id="myBtn">Open Modal</button> -->
 
+<!-- The Modal -->
+<div id="myModal" class="modal">
+<!-- Modal content -->
+<div class="modal-content">
+    <span class="close">&times;</span>
+    <form class="editForm">
+        <div class="lab-inp">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="lab-inp">
+            <label for="avatar">Avatar</label>
+            <input type="url" id="avatar" name="avatar" >
+        </div>
+        <div class="lab-inp">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" required>
+        </div>
+        <div class="lab-inp">
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" required>
+        </div>
+        <div class="lab-inp">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+        <div class="lab-inp">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+       
+        <button type="submit" class="addBtn">Submit</button>
+    </form>
+</div>
+</div>
     <script src="/js/main.js"></script>
 </body>
 </html>
